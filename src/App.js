@@ -20,7 +20,7 @@ const App = () => {
           setChars(res.data);
         })
         .catch(err => {
-          debugger
+          console.error(err);
         })
     }
     fetchChars()
@@ -30,8 +30,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {
-        chars.map(char => {
-          return <Character key={char.id} ></Character>
+        chars.map((char, index) => {
+          return <Character key={index} info={char} ></Character>
         })
       }
     </div>
