@@ -79,6 +79,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  > React is UI Component Library originally developed by Facebook, and released to the public as open source code in 2013. React helps developers build scalable and efficient apps by introducing a component structure where all necessary properties, styling, and functionality are compartmentalized. This also assists with debugging of very large applications and programs as it is easier to isolate and resolve the issue. Finally, React allows developers to write HTML, CSS properties, and Javascript all in the same file for the component. This alleviates the need to coordinate across several different files for the same component.
+
+2. Describe component state.
+
+  > State is an instance of a React component class that is an object of some set of properties that pertain to a component. This state object holds information that changes over the lifetime of the component. Any time the state changes, the component re-renders in order to reflect these changing properties.
+
+3. Describe props.
+
+  > "Props" is short for properties, which are read-only components. It is actually an object that stores the value of certain attributes and work similar to HTML attributes. Essentially, it is a way to pass information from one component to other components.
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  > Side effects are something that impacts anything outside of the current function scope. You can sync effects in a React component by using a React hook called useEffect, which can accept a dependency array that dictates when the side effect is run.
